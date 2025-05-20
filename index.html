@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rincón del Sabor | Bar & Tapas</title>
+    <meta name="description" content="Disfruta de nuestra selección de bebidas y tapas en un ambiente acogedor">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <div class="logo-img">
+                        <img src="https://via.placeholder.com/40" alt="Logo El Rincón del Sabor">
+                    </div>
+                    <span>El Rincón del Sabor</span>
+                </a>
+            </div>
+            
+            <!-- Navegación Desktop -->
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#contacto" class="btn-reservar">Reservar</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Botón Menú Móvil -->
+            <button class="mobile-menu-btn" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Navegación Móvil -->
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#" class="mobile-nav-link">Inicio</a></li>
+                <li><a href="#menu" class="mobile-nav-link">Menú</a></li>
+                <li><a href="#contacto" class="mobile-nav-link">Contacto</a></li>
+                <li><a href="#contacto" class="btn-reservar mobile-nav-link">Reservar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>El Rincón del Sabor</h1>
+            <p>Disfruta de nuestra selección de bebidas y tapas en un ambiente acogedor</p>
+            <a href="#menu" class="btn-primary">Ver Menú</a>
+        </div>
+    </section>
+
+    <!-- Menú Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Nuestro Menú</h2>
+            
+            <!-- Categoría: Bebidas -->
+            <div class="menu-category">
+                <h3 class="category-title">Bebidas</h3>
+                <div class="menu-items">
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-info">
+                            <h4>Mojito Clásico</h4>
+                            <p>Ron, lima, menta fresca, azúcar y soda</p>
+                            <span class="price">8.50 €</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="https://via.placeholder.com/80" alt="Mojito Clásico">
+                        </div>
+                    </div>
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-info">
+                            <h4>Margarita</h4>
+                            <p>Tequila, triple sec y zumo de lima</p>
+                            <span class="price">9.00 €</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="https://via.placeholder.com/80" alt="Margarita">
+                        </div>
+                    </div>
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-info">
+                            <h4>Piña Colada</h4>
+                            <p>Ron, crema de coco y zumo de piña</p>
+                            <span class="price">9.50 €</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="https://via.placeholder.com/80" alt="Piña Colada">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Categoría: Cervezas -->
+            <div class="menu-category">
+                <h3 class="category-title">Cervezas</h3>
+                <div class="menu-items">
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-info">
+                            <h4>Cerveza de Barril</h4>
+                            <p>Nuestra cerveza local de barril</p>
+                            <span class="price">4.50 €</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="https://via.placeholder.com/80" alt="Cerveza de Barril">
+                        </div>
+                    </div>
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-info">
+                            <h4>IPA Artesanal</h4>
+                            <p>Cerveza artesanal con notas cítricas y amargor equilibrado</p>
+                            <span class="price">6.00 €</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="https://via.placeholder.com/80" alt="IPA Artesanal">
+                        </div>
+                    </div>
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-info">
+                            <h4>Stout Cremosa</h4>
+                            <p>Cerveza negra con notas de café y chocolate</p>
+                            <span class="price">6.50 €</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="https://via.placeholder.com/80" alt="Stout Cremosa">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Categoría: Vinos -->
+            <div class="menu-category">
+                <h3 class="category-title">Vinos</h3>
+                <div class="menu-items">
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-info">
+                            <h4>Rioja Crianza</h4>
+                            <p>Vino tinto con 12 meses de barrica</p>
+                            <span class="price">5.50 €</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="https://via.placeholder.com/80" alt="Rioja Crianza">
+                        </div>
+                    </div>
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-info">
+                            <h4>Albariño</h4>
+                            <p>Vino blanco fresco y afrutado</p>
+                            <span class="price">5.00 €</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="https://via.placeholder.com/80" alt="Albariño">
+                        </div>
+                    </div>
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-info">
+                            <h4>Cava Brut Nature</h4>
+                            <p>Espumoso seco y elegante</p>
+                            <span class="price">6.00 €</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="https://via.placeholder.com/80" alt="Cava Brut Nature">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Categoría: Tapas -->
+            <div class="menu-category">
+                <h3 class="category-title">Tapas</h3>
+                <div class="menu-items">
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-info">
+                            <h4>Patatas Bravas</h4>
+                            <p>Patatas fritas con salsa brava casera</p>
+                            <span class="price">6.50 €</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="https://via.placeholder.com/80" alt="Patatas Bravas">
+                        </div>
+                    </div>
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-info">
+                            <h4>Croquetas de Jamón</h4>
+                            <p>Croquetas cremosas de jamón ibérico</p>
+                            <span class="price">8.00 €</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="https://via.placeholder.com/80" alt="Croquetas de Jamón">
+                        </div>
+                    </div>
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-info">
+                            <h4>Tabla de Quesos</h4>
+                            <p>Selección de quesos nacionales con mermelada y frutos secos</p>
+                            <span class="price">14.00 €</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="https://via.placeholder.com/80" alt="Tabla de Quesos">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Categoría: Platos Principales -->
+            <div class="menu-category">
+                <h3 class="category-title">Platos Principales</h3>
+                <div class="menu-items">
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-info">
+                            <h4>Hamburguesa Gourmet</h4>
+                            <p>Carne de ternera, queso cheddar, bacon, cebolla caramelizada y salsa especial</p>
+                            <span class="price">14.50 €</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="https://via.placeholder.com/80" alt="Hamburguesa Gourmet">
+                        </div>
+                    </div>
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-info">
+                            <h4>Entrecot a la Parrilla</h4>
+                            <p>Entrecot de ternera con patatas y verduras de temporada</p>
+                            <span class="price">22.00 €</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="https://via.placeholder.com/80" alt="Entrecot a la Parrilla">
+                        </div>
+                    </div>
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-info">
+                            <h4>Risotto de Setas</h4>
+                            <p>Arroz cremoso con setas silvestres y parmesano</p>
+                            <span class="price">16.00 €</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="https://via.placeholder.com/80" alt="Risotto de Setas">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Categoría: Postres -->
+            <div class="menu-category">
+                <h3 class="category-title">Postres</h3>
+                <div class="menu-items">
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-info">
+                            <h4>Tarta de Queso</h4>
+                            <p>Tarta de queso cremosa con coulis de frutos rojos</p>
+                            <span class="price">6.50 €</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="https://via.placeholder.com/80" alt="Tarta de Queso">
+                        </div>
+                    </div>
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-info">
+                            <h4>Brownie con Helado</h4>
+                            <p>Brownie de chocolate con helado de vainilla</p>
+                            <span class="price">7.00 €</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="https://via.placeholder.com/80" alt="Brownie con Helado">
+                        </div>
+                    </div>
+                    <div class="menu-item" data-aos="fade-up">
+                        <div class="item-info">
+                            <h4>Crema Catalana</h4>
+                            <p>Crema catalana tradicional con azúcar caramelizado</p>
+                            <span class="price">6.00 €</span>
+                        </div>
+                        <div class="item-img">
+                            <img src="https://via.placeholder.com/80" alt="Crema Catalana">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <h3>Envíanos un mensaje</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                        <div id="form-status" class="form-status"></div>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Información</h3>
+                    <div class="info-details">
+                        <p><strong>Dirección:</strong> Calle Ejemplo 123, Ciudad</p>
+                        <p><strong>Teléfono:</strong> +34 123 456 789</p>
+                        <p><strong>Email:</strong> info@elrincondelsabor.com</p>
+                        <p>
+                            <strong>Horario:</strong><br>
+                            Lunes a Jueves: 18:00 - 01:00<br>
+                            Viernes y Sábado: 18:00 - 03:00<br>
+                            Domingo: 18:00 - 00:00
+                        </p>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.67890!2d-3.7037902!3d40.4167754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid%2C%20Spain!5e0!3m2!1sen!2sus!4v1621234567890!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>El Rincón del Sabor</h3>
+                    <p>Tu lugar favorito para disfrutar de las mejores bebidas y tapas en un ambiente acogedor.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#menu">Menú</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-hours">
+                    <h3>Horario</h3>
+                    <ul>
+                        <li>Lunes a Jueves: 18:00 - 01:00</li>
+                        <li>Viernes y Sábado: 18:00 - 03:00</li>
+                        <li>Domingo: 18:00 - 00:00</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> El Rincón del Sabor. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/34123456789" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
